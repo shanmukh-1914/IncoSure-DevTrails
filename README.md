@@ -223,6 +223,6 @@ Result:
 Phase 1 idea and system design are complete in principle. Next step is implementation of simulator-first MVP and adversarial validation harness.
 
 ## 12. Prototype & Demo Links
-- Figma Prototype: [Add your Figma link here](https://dull-finder-82575628.figma.site/)
-- YouTube Demo Video: [Add your YouTube link here](https://youtu.be/iVaTCdtktc8)
-- GitHub UI Demo: [Add you github demo link here](https://shanmukh-1914.github.io/IncoSure-DevTrails/)
+- Figma Prototype: [Figma Design - Prototype](https://dull-finder-82575628.figma.site/)
+- YouTube Demo Video: [Explanation of Demo](https://youtu.be/iVaTCdtktc8)
+- GitHub UI Demo: [Clear Project Explanation and approach](https://shanmukh-1914.github.io/IncoSure-DevTrails/)

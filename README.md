@@ -27,35 +27,44 @@ What this means in practice:
 - Delayed payouts create debt cycles exactly when workers need liquidity most.
 
 ## 2. Who Our User Really Is
+
 ### Primary Persona: Ravi Kumar, 26, Delivery Partner, Vijayawada
-Profile:
+Profile :
 
-- Works across peak lunch and late-night slots (8-11 hours/day)
-- Typical daily earning: INR 800-1200
-- Weekly take-home target: INR 6500-8500
-- Uses low to mid-range Android device with intermittent connectivity
+Operates across peak demand windows, primarily lunch and late-night shifts (approximately 8–11 hours per day)
 
-Behavior and constraints:
+Earns a typical daily income in the range of INR 800–1200
 
-- Moves between high-density hotspots, not fixed routes
-- Accepts jobs dynamically; work pattern changes by weather and demand
-- Cannot spend time on complex claim submission workflows
-- Highly sensitive to false rejections due to thin cash buffer
+Targets a weekly take-home of INR 6500–8500
 
-Core jobs-to-be-done:
+Relies on a low- to mid-range Android device with intermittent network connectivity
 
-- Protect baseline weekly income when city conditions collapse
-- Receive decision and payout quickly enough to avoid short-term borrowing
-- Trust that system is fair and not biased by occasional network/GPS noise
+Behavioral Patterns and Constraints
+
+Navigates dynamically between high-density demand zones rather than following fixed routes
+
+Accepts tasks in real time; work patterns are highly sensitive to fluctuations in weather and demand
+
+Has limited tolerance for time-intensive or complex claim submission processes
+
+Operates with a thin financial buffer, making them highly sensitive to incorrect or delayed claim rejections
+
+Core Jobs-to-be-Done
+
+Ensure protection of baseline weekly income during periods of widespread demand disruption (e.g., adverse city conditions)
+
+Receive claim decisions and payouts with sufficient speed to avoid reliance on short-term borrowing
+
+Maintain confidence in a system that delivers fair outcomes, without being adversely affected by occasional network or GPS inconsistencies
 
 ## 3. Product Thesis and Differentiation
-IncoSure is not generic weather insurance. It is income continuity infrastructure for gig workers:
+Parametric architecture: Relies on objective, data-driven trigger conditions, significantly reducing reliance on manual claims assessment and dispute resolution
 
-- Parametric core: objective trigger conditions reduce manual disputes
-- Worker-centric UX: low-friction onboarding and transparent claim outcomes
-- AI defense layer: separates genuine disruption from synthetic behavior
-- Liquidity protection: payout throttling and risk controls during claim surges
+Worker-centric design: Enables frictionless onboarding while ensuring clarity, transparency, and predictability in claim outcomes
 
+AI-driven risk defense: Employs advanced models to differentiate legitimate disruption events from synthetic or fraudulent behavior
+
+Liquidity management framework: Incorporates payout throttling and dynamic risk controls to maintain financial stability during periods of elevated claim volume
 ## 4. How IncoSure Works (End-to-End)
 1. Worker enrolls in a weekly micro-plan and links delivery activity account.
 2. Platform computes dynamic risk score and premium band.

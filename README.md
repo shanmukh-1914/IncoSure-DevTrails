@@ -4,7 +4,7 @@ IncoSure is an AI-first parametric micro-insurance platform for delivery workers
 Phase 1 focus: prove that the product is useful, technically buildable, and resistant to coordinated abuse.
 
 ## Table of Contents
-- [1. Problem We Solve](#1-problem-we-solve)
+- [1. Problem Statement](#1-problem-we-solve)
 - [2. Who Our User Really Is](#2-who-our-user-really-is)
 - [3. Product Thesis and Differentiation](#3-product-thesis-and-differentiation)
 - [4. How IncoSure Works (End-to-End)](#4-how-incosure-works-end-to-end)
@@ -27,7 +27,7 @@ What this means in practice:
 - Delayed payouts create debt cycles exactly when workers need liquidity most
 
 ## 2. Who Our User Really Is
-### Primary Persona: Ravi Kumar, 26, Delivery Partner, Hyderabad
+### Primary Persona: Ravi Kumar, 26, Delivery Partner, Vijayawada
 Profile:
 
 - Works across peak lunch and late-night slots (8-11 hours/day)

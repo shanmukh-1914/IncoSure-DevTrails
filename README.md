@@ -15,16 +15,16 @@ Phase 1 focus: prove that the product is useful, technically buildable, and resi
 - [9. Success Metrics](#9-success-metrics)
 - [10. Roadmap](#10-roadmap)
 - [11. Current Status](#11-current-status)
-- [12. Prototype & Demo Links](#12-prototype--demo-links)
+- [12. Prototype and demo](#12-prototype--demo-links)
 
 ## 1. Problem We Solve
 Gig workers face sudden income shocks from weather and city disruptions, but existing insurance is usually too slow, too manual, and poorly aligned with short-term earning loss.
 
 What this means in practice:
 
-- Daily earners can lose 20-30% of weekly income from 1-2 disruption days
-- Traditional claims ask for paperwork workers often cannot provide quickly
-- Delayed payouts create debt cycles exactly when workers need liquidity most
+- Daily earners can lose 20-30% of weekly income from 1-2 disruption days.
+- Traditional claims ask for paperwork workers often cannot provide quickly.
+- Delayed payouts create debt cycles exactly when workers need liquidity most.
 
 ## 2. Who Our User Really Is
 ### Primary Persona: Ravi Kumar, 26, Delivery Partner, Hyderabad

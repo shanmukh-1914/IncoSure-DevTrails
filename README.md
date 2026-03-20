@@ -3,6 +3,20 @@ IncoSure is an AI-first parametric micro-insurance platform for delivery workers
 
 Phase 1 focus: prove that the product is useful, technically buildable, and resistant to coordinated abuse.
 
+## Table of Contents
+- [1. Problem We Solve](#1-problem-we-solve)
+- [2. Who Our User Really Is](#2-who-our-user-really-is)
+- [3. Product Thesis and Differentiation](#3-product-thesis-and-differentiation)
+- [4. How IncoSure Works (End-to-End)](#4-how-incosure-works-end-to-end)
+- [5. AI/ML Strategy (What the AI Actually Does)](#5-aiml-strategy-what-the-ai-actually-does)
+- [6. Adversarial Defense & Anti-Spoofing Strategy](#6-adversarial-defense--anti-spoofing-strategy)
+- [7. Technical Foundation (How It Gets Built)](#7-technical-foundation-how-it-gets-built)
+- [8. Risk, Liquidity, and Reliability Controls](#8-risk-liquidity-and-reliability-controls)
+- [9. Success Metrics](#9-success-metrics)
+- [10. Roadmap](#10-roadmap)
+- [11. Current Status](#11-current-status)
+- [12. Prototype & Demo Links](#12-prototype--demo-links)
+
 ## 1. Problem We Solve
 Gig workers face sudden income shocks from weather and city disruptions, but existing insurance is usually too slow, too manual, and poorly aligned with short-term earning loss.
 
@@ -207,3 +221,7 @@ Result:
 
 ## 11. Current Status
 Phase 1 idea and system design are complete in principle. Next step is implementation of simulator-first MVP and adversarial validation harness.
+
+## 12. Prototype & Demo Links
+- Figma Prototype: [Add your Figma link here](https://www.figma.com/)
+- YouTube Demo Video: [Add your YouTube link here](https://www.youtube.com/)

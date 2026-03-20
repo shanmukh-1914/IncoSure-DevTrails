@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IncoSure | Resilient Parametric Income Protection</title>
+  <style>
+    :root {
+      --bg: #0f1115;
+      --surface: #171a21;
+      --border: #2a3040;
+      --text: #e8edf7;
+      --muted: #a9b4cc;
+      --accent: #4da3ff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      width: min(1100px, 92%);
+      margin: 0 auto;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 5;
+      background: #10131acc;
+      backdrop-filter: blur(4px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .topbar .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 10px 0;
+    }
+
+    .topbar a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      padding: 4px 8px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+    }
+
+    .topbar a:hover {
+      color: var(--text);
+      border-color: #3a4a68;
+    }
+
+    header {
+      padding: 36px 0 18px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
+    }
+
+    .tagline {
+      margin: 0;
+      color: var(--muted);
+      max-width: 860px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .stat {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 10px 12px;
+    }
+
+    .stat strong {
+      display: block;
+      color: var(--accent);
+      font-size: 1rem;
+    }
+
+    .section-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+      margin: 24px 0 40px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 1.15rem;
+      color: var(--accent);
+    }
+
+    h3 {
+      margin: 10px 0 8px;
+      font-size: 1rem;
+    }
+
+    p {
+      margin: 0 0 10px;
+    }
+
+    ul,
+    ol {
+      margin: 0 0 8px;
+      padding-left: 18px;
+    }
+
+    .subsection {
+      margin-top: 12px;
+      padding-top: 10px;
+      border-top: 1px dashed var(--border);
+    }
+
+    .subsection:first-of-type {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 8px;
+      font-size: 0.95rem;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 12px;
+    }
+
+    th,
+    td {
+      border: 1px solid var(--border);
+      padding: 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #1c2130;
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    a {
+      color: #85bdff;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 16px 0 28px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 640px) {
+      header {
+        padding-top: 28px;
+      }
+
+      .card {
+        padding: 14px;
+      }
+
+      .topbar .container {
+        gap: 6px;
+      }
+
+      .topbar a {
+        font-size: 0.82rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="topbar">
+    <div class="container">
+      <a href="#problem">Problem</a>
+      <a href="#persona">Persona</a>
+      <a href="#differentiation">Differentiation</a>
+      <a href="#workflow">Workflow</a>
+      <a href="#ai-strategy">AI/ML</a>
+      <a href="#adversarial">Anti-Spoofing</a>
+      <a href="#technical">Technical</a>
+      <a href="#metrics">Metrics</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#links">Links</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <header>
+      <h1>IncoSure</h1>
+      <p class="tagline">
+        AI-first parametric micro-insurance for delivery workers in India. IncoSure protects weekly earnings during verified disruptions and is built to stay solvent under adversarial fraud pressure.
+      </p>
+      <div class="stats">
+        <div class="stat"><strong>20-30%</strong> weekly income can be lost in disruption windows</div>
+        <div class="stat"><strong>3-Lane</strong> decisioning: Green, Amber, Red claims</div>
+        <div class="stat"><strong>Hybrid AI</strong> rules + anomaly + graph ring detection</div>
+        <div class="stat"><strong>Phase 1</strong> useful, buildable, resilient under attack</div>
+      </div>
+    </header>
+
+    <main class="section-grid">
+      <section class="card" id="problem">
+        <h2>1. Problem We Solve</h2>
+        <p>
+          Gig workers face sudden income shocks from weather and city disruptions, but existing insurance is usually too slow, too manual, and poorly aligned with short-term earning loss.
+        </p>
+        <ul>
+          <li>Daily earners can lose 20-30% of weekly income from 1-2 disruption days</li>
+          <li>Traditional claims ask for paperwork workers often cannot provide quickly</li>
+          <li>Delayed payouts create debt cycles exactly when workers need liquidity most</li>
+        </ul>
+      </section>
+
+      <section class="card" id="persona">
+        <h2>2. Who Our User Really Is</h2>
+        <h3>Primary Persona: Ravi Kumar, 26, Delivery Partner, Hyderabad</h3>
+        <div class="two-col">
+          <div>
+            <h3>Profile</h3>
+            <ul>
+              <li>Works across peak lunch and late-night slots (8-11 hours/day)</li>
+              <li>Typical daily earning: INR 800-1200</li>
+              <li>Weekly take-home target: INR 6500-8500</li>
+              <li>Uses low to mid-range Android device with intermittent connectivity</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Behavior and Constraints</h3>
+            <ul>
+              <li>Moves between high-density hotspots, not fixed routes</li>
+              <li>Accepts jobs dynamically; work pattern changes by weather and demand</li>
+              <li>Cannot spend time on complex claim submission workflows</li>
+              <li>Highly sensitive to false rejections due to thin cash buffer</li>
+            </ul>
+          </div>
+        </div>
+        <h3>Core Jobs-to-be-Done</h3>
+        <ul>
+          <li>Protect baseline weekly income when city conditions collapse</li>
+          <li>Receive decision and payout quickly enough to avoid short-term borrowing</li>
+          <li>Trust that system is fair and not biased by occasional network/GPS noise</li>
+        </ul>
+      </section>
+
+      <section class="card" id="differentiation">
+        <h2>3. Product Thesis and Differentiation</h2>
+        <p>IncoSure is not generic weather insurance. It is income continuity infrastructure for gig workers:</p>
+        <ul>
+          <li>Parametric core: objective trigger conditions reduce manual disputes</li>
+          <li>Worker-centric UX: low-friction onboarding and transparent claim outcomes</li>
+          <li>AI defense layer: separates genuine disruption from synthetic behavior</li>
+          <li>Liquidity protection: payout throttling and risk controls during claim surges</li>
+        </ul>
+      </section>
+
+      <section class="card" id="workflow">
+        <h2>4. How IncoSure Works (End-to-End)</h2>
+        <ol>
+          <li>Worker enrolls in a weekly micro-plan and links delivery activity account.</li>
+          <li>Platform computes dynamic risk score and premium band.</li>
+          <li>Real-time trigger engine monitors weather, mobility, and city risk signals.</li>
+          <li>When trigger conditions are met, claim is auto-generated.</li>
+          <li>AI decision layer classifies claim as approve, review-light, or investigate.</li>
+          <li>Payout is released instantly for trusted claims; flagged claims enter assisted flow.</li>
+        </ol>
+        <h3>Example Scenario</h3>
+        <ul>
+          <li>Rainfall &gt; 50 mm/day in worker zone for sustained window</li>
+          <li>City mobility and delivery completion rates drop significantly</li>
+          <li>Worker exposure evidence shows real field disruption</li>
+          <li>Claim approved and compensated without manual document collection</li>
+        </ul>
+      </section>
+
+      <section class="card" id="ai-strategy">
+        <h2>5. AI/ML Strategy (What the AI Actually Does)</h2>
+        <div class="subsection">
+          <h3>A. Risk and Pricing Model</h3>
+          <p><strong>Purpose:</strong> Estimate expected disruption risk and recommend weekly premium tier.</p>
+          <p><strong>Inputs:</strong> Historical weather severity by zone, disruption frequency and seasonality, worker activity consistency and exposure profile.</p>
+          <p><strong>Outputs:</strong> Risk score, pricing band, reserve contribution recommendation.</p>
+        </div>
+        <div class="subsection">
+          <h3>B. Claim Authenticity Model</h3>
+          <p><strong>Purpose:</strong> Distinguish genuine stranded workers from spoofed or coordinated abuse.</p>
+          <p><strong>Model approach:</strong> Hybrid rules + anomaly detection + graph-based ring detection.</p>
+          <p><strong>Outputs:</strong> Trust score, fraud confidence, next-action state (approve/review/investigate).</p>
+        </div>
+        <div class="subsection">
+          <h3>C. Pool Stress Forecasting</h3>
+          <p><strong>Purpose:</strong> Predict payout load under city-wide events and prevent liquidity shocks.</p>
+          <p><strong>Outputs:</strong> Expected claim volume, stress tier activation, reserve utilization plan.</p>
+        </div>
+      </section>
+
+      <section class="card" id="adversarial">
+        <h2>6. Adversarial Defense &amp; Anti-Spoofing Strategy</h2>
+        <p>The market-crash scenario assumes organized GPS spoofing by coordinated groups. IncoSure defends with multi-signal verification and fraud-ring analytics.</p>
+
+        <div class="subsection">
+          <h3>6.1 The Differentiation</h3>
+          <ul>
+            <li>Multi-modal consistency check, not GPS-only.</li>
+            <li>Temporal plausibility to catch scripted movement patterns.</li>
+            <li>Cohort-level ring detection across synchronized clusters.</li>
+            <li>Progressive trust architecture with adaptive verification.</li>
+          </ul>
+        </div>
+
+        <div class="subsection">
+          <h3>6.2 The Data</h3>
+          <ul>
+            <li>Device and sensor integrity signals (mock location, root/emulator, sensor consistency).</li>
+            <li>Location behavior features (continuity, impossible jumps, route entropy, cell/Wi-Fi coherence).</li>
+            <li>Network telemetry (ASN/IP reputation, proxy/VPN probability, latency anomalies).</li>
+            <li>Delivery platform activity (acceptance/completion feasibility, cancellation streaks).</li>
+            <li>Environmental corroboration (radar, flood alerts, traffic slowdown, advisories).</li>
+            <li>Graph intelligence for ring discovery (shared identifiers and synchronized claim timing).</li>
+          </ul>
+        </div>
+
+        <div class="subsection">
+          <h3>6.3 The UX Balance</h3>
+          <ul>
+            <li>Three-lane decisioning: Green (instant), Amber (assisted review), Red (investigation hold).</li>
+            <li>Benefit-of-doubt micro-advance for selected amber claims.</li>
+            <li>Explainable status reasons instead of opaque rejection text.</li>
+            <li>Human-in-the-loop SLA for bounded turnaround.</li>
+            <li>Appeal and recovery path; false positives feed model improvement.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="card" id="technical">
+        <h2>7. Technical Foundation (How It Gets Built)</h2>
+        <h3>Service Architecture</h3>
+        <ul>
+          <li>Client apps: mobile-first worker app + operations dashboard</li>
+          <li>API layer: policy, claims, decisioning, payout orchestration</li>
+          <li>Data layer: policy store, claims ledger, feature store, model outputs</li>
+          <li>Intelligence layer: risk model, authenticity model, graph analytics</li>
+          <li>External connectors: weather, maps, mobility, payments</li>
+        </ul>
+
+        <h3>Tech Stack</h3>
+        <table id="tech-stack">
+          <thead>
+            <tr>
+              <th>Layer</th>
+              <th>Planned Options</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Frontend</td>
+              <td>React Native or Flutter</td>
+            </tr>
+            <tr>
+              <td>Backend</td>
+              <td>Java Spring Boot or Node.js services</td>
+            </tr>
+            <tr>
+              <td>Data</td>
+              <td>PostgreSQL/MySQL + Redis cache</td>
+            </tr>
+            <tr>
+              <td>AI/ML</td>
+              <td>Python (scikit-learn, XGBoost, PyTorch optional), feature pipelines</td>
+            </tr>
+            <tr>
+              <td>Streaming/Events</td>
+              <td>Kafka or managed queue for trigger ingestion</td>
+            </tr>
+            <tr>
+              <td>Cloud</td>
+              <td>Containerized microservices, managed DB, object storage, secret vault</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Build Plan</h3>
+        <ol>
+          <li>Build synthetic simulator for weather, mobility, and claim events.</li>
+          <li>Implement deterministic trigger engine with audit logs.</li>
+          <li>Train baseline authenticity model on simulated adversarial traces.</li>
+          <li>Add graph-based coordinated ring detection.</li>
+          <li>Run red-team scenarios (GPS spoofing, timing bursts, replay attacks).</li>
+          <li>Instrument fairness metrics (false positive rate on genuine cases).</li>
+        </ol>
+      </section>
+
+      <section class="card" id="risk-controls">
+        <h2>8. Risk, Liquidity, and Reliability Controls</h2>
+        <ul>
+          <li>Dynamic reserve buffers by city risk tier</li>
+          <li>Payout rate-limits and staged disbursement during extreme spikes</li>
+          <li>Reinsurance or emergency credit line simulation for tail events</li>
+          <li>Full decision auditability for dispute resolution and regulator review</li>
+        </ul>
+      </section>
+
+      <section class="card" id="metrics">
+        <h2>9. Success Metrics</h2>
+        <ul>
+          <li>Claim decision latency (P50/P95)</li>
+          <li>True fraud catch rate vs false positive rate</li>
+          <li>Percentage of genuine claims paid within SLA</li>
+          <li>Pool solvency under simulated coordinated attack</li>
+          <li>Worker trust metrics (appeal outcomes, repeat enrollment intent)</li>
+        </ul>
+      </section>
+
+      <section class="card" id="roadmap">
+        <h2>10. Roadmap</h2>
+        <div class="two-col">
+          <div>
+            <h3>Phase 1</h3>
+            <ul>
+              <li>Refined persona and pain-point validation</li>
+              <li>AI architecture and anti-spoofing defense design</li>
+              <li>Technical implementation blueprint and simulation plan</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Phase 2</h3>
+            <ul>
+              <li>MVP services and trigger engine implementation</li>
+              <li>Baseline model training and evaluation harness</li>
+              <li>Sandbox payout integration and pilot simulation</li>
+            </ul>
+          </div>
+        </div>
+        <h3>Phase 3</h3>
+        <ul>
+          <li>Controlled pilot with real partners</li>
+          <li>Policy tuning, fairness hardening, and reserve optimization</li>
+        </ul>
+      </section>
+
+      <section class="card" id="status">
+        <h2>11. Current Status</h2>
+        <p>Phase 1 idea and system design are complete in principle. Next step is implementation of simulator-first MVP and adversarial validation harness.</p>
+      </section>
+
+      <section class="card" id="links">
+        <h2>12. Prototype &amp; Demo Links</h2>
+        <ul>
+          <li>Figma Prototype: <a href="https://www.figma.com/" target="_blank" rel="noopener noreferrer">https://www.figma.com/</a></li>
+          <li>YouTube Demo Video: <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">https://www.youtube.com/</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      IncoSure Project Demo - Phase 1 Concept Website
+    </footer>
+  </div>
+</body>
+</html>

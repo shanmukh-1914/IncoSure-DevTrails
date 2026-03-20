@@ -1,10 +1,10 @@
 # IncoSure: Resilient Parametric Income Protection for Gig Workers
 IncoSure is an AI-first parametric micro-insurance platform for delivery workers in India. It protects weekly earnings during verified disruption events (flooding, extreme heat, hazardous air quality, and emergency restrictions) and is designed to stay solvent under adversarial fraud pressure.
 
-Phase 1 focus: prove that the product is useful, technically buildable, and resistant to coordinated abuse.
+Phase 1 focuses on demonstrating that the product delivers real value, can be realistically built with available technology, and is robust against coordinated misuse or abuse.
 
 ## Table of Contents
-- [1. Problem We Solve](#1-problem-we-solve)
+- [1. Problem Statement](#1-problem-we-solve)
 - [2. Who Our User Really Is](#2-who-our-user-really-is)
 - [3. Product Thesis and Differentiation](#3-product-thesis-and-differentiation)
 - [4. How IncoSure Works (End-to-End)](#4-how-incosure-works-end-to-end)
@@ -15,20 +15,21 @@ Phase 1 focus: prove that the product is useful, technically buildable, and resi
 - [9. Success Metrics](#9-success-metrics)
 - [10. Roadmap](#10-roadmap)
 - [11. Current Status](#11-current-status)
-- [12. Prototype & Demo Links](#12-prototype--demo-links)
+- [12. Prototype and demo](#12-prototype--demo-links)
 
 ## 1. Problem We Solve
 Gig workers face sudden income shocks from weather and city disruptions, but existing insurance is usually too slow, too manual, and poorly aligned with short-term earning loss.
 
 What this means in practice:
 
-- Daily earners can lose 20-30% of weekly income from 1-2 disruption days
-- Traditional claims ask for paperwork workers often cannot provide quickly
-- Delayed payouts create debt cycles exactly when workers need liquidity most
+- Daily earners can lose 20-30% of weekly income from 1-2 disruption days.
+- Traditional claims ask for paperwork workers often cannot provide quickly.
+- Delayed payouts create debt cycles exactly when workers need liquidity most.
 
 ## 2. Who Our User Really Is
-### Primary Persona: Ravi Kumar, 26, Delivery Partner, Hyderabad
-Profile
+
+### Primary Persona: Ravi Kumar, 26, Delivery Partner, Vijayawada
+Profile :
 
 Operates across peak demand windows, primarily lunch and late-night shifts (approximately 8–11 hours per day)
 

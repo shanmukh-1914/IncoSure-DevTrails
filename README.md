@@ -1,7 +1,7 @@
 # IncoSure: Resilient Parametric Income Protection for Gig Workers
 IncoSure is an AI-first parametric micro-insurance platform for delivery workers in India. It protects weekly earnings during verified disruption events (flooding, extreme heat, hazardous air quality, and emergency restrictions) and is designed to stay solvent under adversarial fraud pressure.
 
-Phase 1 focus: prove that the product is useful, technically buildable, and resistant to coordinated abuse.
+Phase 1 focuses on demonstrating that the product delivers real value, can be realistically built with available technology, and is robust against coordinated misuse or abuse.
 
 ## Table of Contents
 - [1. Problem We Solve](#1-problem-we-solve)

@@ -95,7 +95,7 @@ export const startJudgeDemoSession = async () => {
     await activateInsurancePlan("weekly");
     updateUser({ earningsProtected: 12870 });
   } else {
-    const loginResult = login(DEMO_EMAIL, DEMO_PASSWORD);
+    const loginResult = await login(DEMO_EMAIL, DEMO_PASSWORD);
     if (!loginResult.success) {
       return loginResult;
     }

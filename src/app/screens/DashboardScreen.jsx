@@ -80,7 +80,7 @@ export function DashboardScreen({ view = "home" }) {
       const protectedAmount = createdClaims.reduce((sum, claim) => sum + claim.amount, 0);
       updateUser({ earningsProtected: (user.earningsProtected || 0) + protectedAmount });
       setLatestAutoClaim(createdClaims[0]);
-      getUserClaims().then((updatedClaims) => setClaims(updatedClaims));
+      setClaims(getUserClaims());
       setUser(getCurrentUser());
     }
   }, [weather, user, activePlan]);
